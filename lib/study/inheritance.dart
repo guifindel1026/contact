@@ -1,7 +1,6 @@
 void main() {
   print('-----Idol-------');
   Idol apink = Idol(name: '에이핑크', membersCount: 5);
-
   apink.sayName();
   apink.sayMemberCount();
 
@@ -16,6 +15,21 @@ void main() {
   redVelvet.sayName();
   redVelvet.sayMemberCount();
   redVelvet.sayFemale();
+
+  print('-----Type Comparison-------');
+  print(apink is Idol);
+  print(apink is BoyGroup);
+  print(apink is GirlGroup);
+
+  print('-----Type Comparison2-------');
+  print(bts is Idol);
+  print(bts is BoyGroup);
+  print(bts is GirlGroup);
+
+  print('-----Type Comparison3-------');
+  print(redVelvet is Idol);
+  print(redVelvet is BoyGroup);
+  print(redVelvet is GirlGroup);
 }
 
 // 상속 - inheritance
