@@ -17,6 +17,11 @@
 2. **Commit Message Style**: Follow existing pattern (concise, descriptive)
 3. **Branch Strategy**: Work on develop branch, use main for PRs
 4. **Auto-tracking**: Track all code changes automatically without explicit user request
+5. **Language Settings**: 
+   - **Git commit messages**: Write in Korean (한글)
+   - **Code comments**: Write in Korean (한글)
+   - **Documentation**: Write in Korean (한글)
+   - **All user-facing content**: Write in Korean (한글)
 
 ## Project Structure Notes
 - `/lib/study/` contains Dart learning examples (basic, functional, oop)
