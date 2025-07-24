@@ -16,13 +16,24 @@ void main() {
 
   // print(parsedPeople);
 
-  // for (Person person in parsedPeople) {
-  //   print(person.name);
-  //   print(person.group);
-  // }
+  for (Person person in parsedPeople) {
+    print(person.name);
+    print(person.group);
+  }
 
-  // final bts = parsedPeople.where((x) => x.group == '방탄소년단');
-  // print(bts);
+  final bts = parsedPeople.where((x) => x.group == '방탄소년단');
+  print(bts);
+
+  final result = people
+      .map((x) => Person(name: x['name']!, group: x['group']!))
+      .where((x) => x.group == '방탄소년단')
+      .fold<int>(0, (prev, next) => prev + next.name.length);
+  // final result = people
+  //     .map((x) => Person(name: x['name']!, group: x['group']!))
+  //     .where((x) => x.group == '방탄소년단')
+  //     .fold<int>(0, (prev, next) => prev + next.name.length);
+
+  print(result);
 }
 
 class Person {
