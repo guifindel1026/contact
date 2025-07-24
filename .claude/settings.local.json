@@ -8,7 +8,9 @@
       "Bash(git push:*)",
       "Bash(ls:*)",
       "Bash(mv:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(file:*)",
+      "Bash(hexdump:*)"
     ],
     "deny": []
   }
